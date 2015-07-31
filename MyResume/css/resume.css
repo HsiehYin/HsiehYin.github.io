@@ -1,0 +1,144 @@
+ @import url(http://fonts.googleapis.com/css?family=Josefin+Sans|Pacifico|Amatic+SC|Rock+Salt);
+
+ /* 
+ google提供的字型 也可以寫 link 在 html 裡面
+ <link href='http://fonts.googleapis.com/css?family=Josefin+Sans|Pacifico|Amatic+SC|Rock+Salt' rel='stylesheet' type='text/css'> 
+ */
+
+/*
+font-family: 'Josefin Sans', sans-serif; 正常
+font-family: 'Pacifico', cursive; 草寫 ，覺得當小標不錯
+font-family: 'Amatic SC', cursive; 方正有趣，都是大寫，我會拿來當 menu link
+font-family: 'Rock Salt', cursive; 都是大寫，較奔放，我會拿來當英文簽名
+*/
+
+body{
+	font-family:Microsoft JhengHei,arial,helvetica,sans-serif;
+	font-size: 16px;
+	color:black;
+	background-color: white;
+}
+
+a{
+	text-decoration: none;
+}
+
+h1{ 
+	font-family: 'Rock Salt', cursive;
+	font-size: 36px; 
+	line-height: 40px;
+	color: black;
+}
+
+h2{
+	font-family: 'Pacifico', cursive, Microsoft YaHei;
+	font-size: 30px;
+	line-height: 32px;
+}
+
+h3{
+	font-family: 'Amatic SC', cursive,Microsoft YaHei;
+	font-size: 26px;
+}
+
+h4{
+	font-size: 22px;
+	color: white;
+	font-weight: 400;
+	line-height: 22px;
+}
+
+
+.header{
+	position: fixed;
+	top:0px;
+	right: 0px;
+	left: 0px;
+	background-color:#CB4042;
+	width: 100%;
+	height: 70px;
+}
+.top-nav{
+	text-align: center;
+	padding-top: 14px;
+}
+
+.menu-link{
+	font-family: 'Amatic SC', cursive , Microsoft YaHei;
+	font-size: 34px;
+	color: white;
+	line-height: 34px;
+	padding-right: 30px;
+}
+
+.section{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.section.section-about {
+  background-image: -webkit-linear-gradient(rgba(255, 181, 181, 0.4) 44%, rgba(255, 255, 255, 0.8)), url('../images/me.jpg');
+  background-image: linear-gradient(rgba(255, 181, 181, 0.4) 44%, rgba(255, 255, 255, 0.8)), url('../images/me.jpg');
+  background-position: 0% 0%, 50% 0px;
+  background-size: auto, cover;
+  background-repeat:no-repeat;
+}
+
+.about-block{
+	display: inline-block;
+	padding: 1em;
+  -moz-column-count: 3;
+  -moz-column-gap: 1em;
+  -webkit-column-count: 3;
+  -webkit-column-gap: 1em;
+  column-count: 3;
+  column-gap: 1em;
+}
+.about{
+	display: inline-block;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	background-color: rgba(12,12,12,0.5);
+	border-radius: 10px;
+	text-align: center;
+}
+
+.face{
+    border: 4px solid #F75C2F;
+    padding: 5px;
+	width: 50%;
+	border-radius: 50%
+}
+
+.content{
+	padding-top: 60px;
+}
+
+.section-introduction{
+	display: inline-block;
+	padding: 2% 6%;
+}
+
+.section-skill{
+	/*background-color:#F05E1C; */
+	color: white;
+	background-color: #562E37;
+	padding: 2% 4%;
+}
+
+.setctoion-work{
+	background-color: white;
+
+}
+
+
+.footer{
+	width: 100%;
+	left: 0px;
+	text-align: center;
+	background-color:#CB4042;
+	padding-top: 2%;
+  padding-bottom: 2%;
+  color: white;
+  font-size: 14px;
+}
