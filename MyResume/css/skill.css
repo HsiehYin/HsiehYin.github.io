@@ -14,7 +14,7 @@ font-family: 'Rock Salt', cursive; 都是大寫，較奔放，我會拿來當英
 
 body{
 	font-family:Microsoft JhengHei,arial,helvetica,sans-serif;
-	font-size: 18px;
+	font-size: 16px;
 	color:black;
 	background-color: white;
 }
@@ -38,7 +38,7 @@ h2{
 
 h3{
 	font-family: 'Amatic SC', cursive,Microsoft YaHei;
-	font-size: 28px;
+	font-size: 26px;
 }
 
 h4{
@@ -58,7 +58,6 @@ h4{
 	width: 100%;
 	height: 70px;
 }
-
 .top-nav{
 	text-align: center;
 	padding-top: 14px;
@@ -83,58 +82,6 @@ h4{
 .section{
   padding-top: 10px;
   padding-bottom: 10px;
-}
-
-.section.section-about {
-  background-image: -webkit-linear-gradient(rgba(255, 181, 181, 0.4) 44%, rgba(255, 255, 255, 0.9)), url('../images/me.jpg');
-  background-image: linear-gradient(rgba(255, 181, 181, 0.4) 44%, rgba(255, 255, 255, 0.9)), url('../images/me.jpg');
-  background-position: 0% 0%, 50% 0px;
-  background-size: auto, cover;
-  background-repeat:no-repeat;
-}
-
-.about-block{
-	display: inline-block;
-	padding: 1em;
-  -moz-column-count: 3;
-  -moz-column-gap: 1em;
-  -webkit-column-count: 3;
-  -webkit-column-gap: 1em;
-  column-count: 3;
-  column-gap: 1em;
-}
-.about{
-	display: inline-block;
-	padding-top: 2%;
-	padding-bottom: 2%;
-	background-color: rgba(12,12,12,0.5);
-	border-radius: 10px;
-	text-align: center;
-}
-
-.face{
-    border: 4px solid #F75C2F;
-    padding: 5px;
-	width: 50%;
-	border-radius: 50%
-}
-
-.section-introduction{
-	display: inline-block;
-	padding: 2% 6%;
-}
-
-.education{
-	background-color:#F75C2F; 
-	color: white;
-	padding-right: 6%;
-	padding-left: 6%;
-	padding-bottom: 6%;
-}
-
-.setctoion-work{
-	background-color: white;
-
 }
 
 
