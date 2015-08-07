@@ -1,0 +1,153 @@
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans|Pacifico|Amatic+SC|Rock+Salt);
+
+/*
+font-family: 'Josefin Sans', sans-serif; 正常
+font-family: 'Pacifico', cursive; 草寫 ，覺得當小標不錯
+font-family: 'Amatic SC', cursive; 方正有趣，都是大寫，我會拿來當 menu link
+font-family: 'Rock Salt', cursive; 都是大寫，較奔放，我會拿來當英文簽名
+*/
+
+body{
+	background-color: #FEDFE1;
+	font-family: sans-serif;
+}
+
+h1{
+	font-family: 'Pacifico', cursive;
+}
+
+a{
+	text-decoration: none;
+}
+
+input{
+	text-align: center;
+}
+p{
+	font-size: 24px;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+.keyboard{
+	display: table;
+	margin: auto;
+	margin-top: 5%;
+}
+
+.row{
+	display: table-row;
+}
+
+.col{
+	display: table-cell;
+}
+
+.button{
+	height: 50px;
+	width: 70px;
+	text-align: center;
+	font-size: 26px;
+	cursor: pointer;
+	background-color: white;
+	border-radius: 4px;
+	transition: background-color 0.3s;
+    -webkit-transition: background-color 0.3s; /* Chrome & safari */
+    -moz-transition: background-color 0.3s; /* firefox */
+}
+
+.button.x , .button.y{
+	background-color: #FCFAF2;
+}
+
+.button:hover{
+	background-color: #E3EAF9;
+}
+
+
+
+.right{
+	margin-right: 20%;
+	float: right;
+}
+
+.compare{
+		text-align: center;
+}
+
+.put{
+	font-size: 22px;
+	line-height: 24px;
+	width: 60px;
+	border-radius: 3px;
+}
+
+.choose{
+	display: inline-block;
+	float: right;
+	padding-right: 10%;
+	margin-top: 10%;
+}
+
+.box{
+	display: block;
+	cursor: pointer;
+	font-size: 22px;
+	background-color: #EEA9A9;
+	padding:10px 10px;
+	border: 1px solid #EB7A77;
+	border-radius: 5px;
+	color: black;
+	font-family: 'Josefin Sans', sans-serif;
+	text-align: center;
+	transition: background-color 0.5s;
+    -webkit-transition: background-color 0.5s; /* Chrome & safari */
+    -moz-transition: background-color 0.5s; /* firefox */
+}
+
+.box:hover{
+	background-color: #F19483;
+	font-weight: 600;
+}
+
+.box.try{
+	margin-top: 10px;
+}
+
+.box.show-answer{
+	margin-top: 10px;
+}
+
+.getResult{
+	display: inline-block;
+	padding:2% 2%;
+	margin-left: 6%;
+	padding-bottom: 6%;
+	background-color: white;
+	border-radius: 5px;
+
+}
+
+.AIrandom{
+	height:100px;
+	width:320px;
+	border-bottom: 2px solid pink;
+	margin: auto;
+}
+
+.showbox{
+	display: inline-block;
+	border: 1px solid #D7C4BB ;
+	border-radius: 5px;
+	padding: 6% 8%;
+	margin: 6px 6px;
+	float: left;
+	background-color: #FFEAEB;
+	font-size: 26px;
+	color: #F05E1C;
+}
+
+.result{
+	font-size: 24px;
+	line-height: 26px;
+	padding-left: 18px;
+}

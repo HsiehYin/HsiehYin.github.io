@@ -7,6 +7,8 @@
 	<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
 	-->
 	<link rel="stylesheet" type="text/css" href="css/resume.css">
+	<script type="text/javascript" src="resume.js"></script>
+
 	<title>My Resume</title>
 </head>
 
@@ -14,9 +16,18 @@
 
 <div class="header">
 	<nav class="top-nav" role="navigation">
-		<a class="menu-link" href="#">about</a>
-		<a class="menu-link" href="#">works</a>
-		<a class="menu-link" href="skill.html">skill</a>
+		<div class="menulist">
+			<ul>
+				<li><a class="menu-link" href="resume.html">about</a></li>
+				<li><a class="menu-link" href="#">works</a>
+				<ul class="has-sub">
+					<li><a class="sub" href="NumGuess.html">Guess</a></li>
+					<li><a class="sub" href="#">testtwo</a></li>
+				</ul>
+				</li>
+				<li><a class="menu-link" href="skill.html">skill</a></li>
+			</ul>
+		</div>
 	</nav>
 </div>
 
@@ -27,27 +38,28 @@
 		<div class="about">
 			<h4>隨然不是頂尖聰明，但是很聰明!</h4>
 			<h4>✧*｡٩(ˊᗜˋ*)و✧*｡ 哪來的自信?</h4>
-			<img class="face" src="images/cap.jpg">
+				<img class="face" src="images/cap.jpg">
 			<h1>Hsieh, Yin-Hsuan</h1>
 			<h2>Vita ♏ 謝尹瑄</h2>
 		</div>
-		<div class="about-midden"></div>
-		<div class="about-right"></div>
+		<div class="about-midden">
+		</div>
+		<div class="about-right">
+			<a href="close-button"></a>
+		</div>
 	</div>
 	</section>
 
 	<section class="section section-introduction" >
 		
 		<div class="intro-text">
-		<h3>Personality and Character</h3>
-			<ul>
-			<li>喜愛冒險</li>
-			<li>能收能放，愛搞怪，時有創意鬼點子</li>
-			<li>跳Tone思維，卻不失原則</li>
-			<li>邏輯思考能力強</li>
-			<li>能獨立作業，亦適合團隊合作</li>
-			<li>愛繪圖的工程師</li>
-			</ul>
+		<h3>Personality and Character</h3>			
+			喜愛冒險<br>
+			能收能放，愛搞怪，時有創意鬼點子<br>
+			跳Tone思維，卻不失原則<br>
+			邏輯思考能力強<br>
+			能獨立作業，亦適合團隊合作<br>
+			愛繪圖的工程師
 		</div>
 </section>
 <section class="section education">
@@ -67,13 +79,12 @@
 		
 </section>
 
-<section class="section section-work">
-	<img src="images/guitar.jpg" width="30%">
-	<img src="images/min.jpg" width="30%">
+<section class="section interests">
+	
 	<h3>interests</h3>
-		吉他，繪圖，唱歌(即使五音不全...
-<h1>not~~~~yet~~~~~</h1>
-<h1>還沒調整好!!還沒調整好!!還沒調整好!!</h1>
+		吉他，繪圖，唱歌(即使五音不全)<br>
+<img class="hob-image" src="images/guitar.jpg" width="30%">
+	<img class="hob-image" src="images/min.jpg" width="30%">
 </section>
 	<footer class="footer">
         <div class="container">

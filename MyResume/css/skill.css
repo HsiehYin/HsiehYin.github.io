@@ -38,7 +38,7 @@ h2{
 
 h3{
 	font-family: 'Amatic SC', cursive,Microsoft YaHei;
-	font-size: 26px;
+	font-size: 30px;
 }
 
 h4{
@@ -46,6 +46,34 @@ h4{
 	color: white;
 	font-weight: 400;
 	line-height: 22px;
+}
+
+ul{
+	list-style:none;
+	padding: 0px;
+	margin: 0px;
+}
+
+ul li{
+	float: left;
+}
+
+ul li ul{
+	display: none;
+}
+
+ul li:hover ul{
+	display: block;
+}
+
+ul li ul li{
+	clear: left;
+	padding-top: 5px;
+	padding-bottom: 5px; 
+	height: 38px;
+	width: 100px;
+	background-color: #D75455;
+	border-top: 2px solid #EB7A77;
 }
 
 
@@ -56,23 +84,48 @@ h4{
 	left: 0px;
 	background-color:#CB4042;
 	width: 100%;
-	height: 70px;
+	height: 60px;
 }
+
 .top-nav{
 	text-align: center;
-	padding-top: 14px;
+	padding-top: 11px;
+}
+
+.menulist{
+	display: inline-block;
+	margin: auto;
 }
 
 .menu-link{
 	font-family: 'Amatic SC', cursive , Microsoft YaHei;
-	font-size: 34px;
+	font-size: 36px;
 	color: white;
-	line-height: 34px;
-	padding-right: 30px;
+	line-height: 36px;
+	padding-right: 20px;
+	padding-left: 20px ;
 }
 
 .menu-link:hover{
 	color: yellow;
+	font-weight: 600;
+}
+
+.has-sub{
+	margin-top: 12px;
+}
+
+.sub{
+	font-family: 'Amatic SC', cursive , Microsoft YaHei;
+	font-size: 30px;
+	color: black;
+	padding-right: 20px;
+	padding-left: 20px ;
+}
+
+.sub:hover{
+	color: #FAD689;
+	font-weight: 600;
 }
 
 .content{
@@ -84,6 +137,23 @@ h4{
   padding-bottom: 10px;
 }
 
+.experienced{
+	display: inline-block;
+	padding: 2% 2%;
+	border: 1px solid pink;
+}
+
+.competition{
+	display: inline-block;
+	padding: 2% 2%;
+	border: 1px solid yellow;
+}
+
+.speciality{
+	display: inline-block;
+	padding: 2% 2%;
+	border: 1px solid gray;
+}
 
 .footer{
 	width: 100%;

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Guessing game</title>
+	<link rel="stylesheet" type="text/css" href="css/NumGuess.css">
+	
+	<script type="text/javascript" src="css/NumGuess.js"></script>
+
+</head>
+
+<body onload="LoadFunction()">
+
+<h1>Number Guessing Game</h1>
+<div class="getResult" id="getResult">
+	<div class="AIrandom">
+		<div class="showbox" id="one">?</div>
+		<div class="showbox" id="two">?</div>
+		<div class="showbox" id="three">?</div>
+		<div class="showbox" id="four">?</div>
+
+		<script>
+			var max=9 , min=0;
+			var random = new Array;
+			var number;
+			var i,j;
+			random[0]=Math.floor(Math.random() * (max - min + 1)) + min;
+
+			for( i=1; i<4 ; i++ ){
+				number = Math.floor(Math.random() * (max - min + 1)) + min;
+				var conflit=false;
+				
+				do{
+					if(number==random[0]||number==random[1]||number==random[2]){
+						number = Math.floor(Math.random() * (max - min + 1)) + min;
+						conflit=true;
+					}else{
+						conflit=false;
+					}
+				}while(conflit);
+				random[i]=number;
+			}
+			function showAnswer(){	
+				document.getElementById('one').innerHTML = random[0];
+				document.getElementById('two').innerHTML = random[1];
+				document.getElementById('three').innerHTML = random[2];
+				document.getElementById('four').innerHTML = random[3];
+			}
+		</script>
+
+	</div>
+	<div>
+		<p>&nbsp;&nbsp;&nbsp;&nbsp;Input&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;result</p>
+		<div class="result" id="show1" style="display:none"></div>
+		<div class="result" id="show2" style="display:none"></div>
+		<div class="result" id="show3" style="display:none"></div>
+		<div class="result" id="show4" style="display:none"></div>
+		<div class="result" id="show5" style="display:none"></div>
+		<div class="result" id="show6" style="display:none"></div>
+		<div class="result" id="show7" style="display:none"></div>
+		<div class="result" id="show8" style="display:none"></div>
+		<div class="result" id="show9" style="display:none"></div>
+		<div class="result" id="show10" style="display:none"></div>
+		<div class="result" id="show11" style="display:none;text-align:center;">答對了! 過關!!</div>
+	</div>
+</div>
+
+<div class="right">
+<div class="compare">
+	<div class="showUp">
+		<form name="guessform" id="inputform">
+			<input class="put" id="boxone" type="text" name="guessNumber" maxlength="1" >
+			<input class="put" id="boxtwo" type="text" name="guessNumber" maxlength="1">
+			<input class="put" id="boxthree" type="text" name="guessNumber" maxlength="1">
+			<input class="put" id="boxfour" type="text" name="guessNumber" maxlength="1">
+		</form>
+	</div>
+</div>
+
+<div class="keyboard">
+	<div class="row">
+		<div class="col">
+			<button class="button" id="button1" value="1" onclick="getNum(1)">1</button>
+		</div>
+		<div class="col">
+			<button  class="button" id="button2" value="2" onclick="getNum(2)">2</button>
+		</div>
+		<div class="col">
+			<button class="button" id="button3" value="3" onclick="getNum(3)">3</button>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col">
+			<button class="button" id="button4" value="4" onclick="getNum(4)">4</button>
+		</div>
+		<div class="col">
+			<button class="button" id="button5" value="5" onclick="getNum(5)">5</button>
+		</div>
+		<div class="col">
+			<button class="button" id="button6" value="6" onclick="getNum(6)">6</button>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col">
+			<button class="button" id="button7" value="7" onclick="getNum(7)">7</button>
+		</div>
+		<div class="col">
+			<button class="button" id="button8" value="8" onclick="getNum(8)">8</button>
+		</div>
+		<div class="col">
+			<button class="button" id="button9" value="9" onclick="getNum(9)">9</button>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col">
+			<button class="button x" id="buttonx" onclick="inputClear();" >x</button>
+		</div>
+		<div class="col">
+			<button class="button" id="button0" value="0" onclick="getNum(0)">0</button>
+		</div>
+		<div class="col">
+			<button class="button y" id="check" onclick="compare(random[0],random[1],random[2],random[3]);getResult();">yes</button>
+		</div>
+	</div>
+</div>
+
+<div class="choose">
+	<a class="box back" href="resume.html">Back To Home Page</a>
+	<a class="box try" href="NumGuess.html">Try it Again</a>
+	<a class="box show-answer" onclick="showAnswer()">Show Answer</a>
+</div>
+
+</div>
+</body>
+</html>
