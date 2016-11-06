@@ -7,6 +7,8 @@
     <title>20161003履歷</title>
     <link rel="stylesheet" href="resume.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="resume.js"></script>
 </head>
 
 <body id="myPage">
@@ -16,18 +18,18 @@
             <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
                 <a class="w3-hover-white w3-large w3-theme-d1" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
             </li>
-            <li><a href="#top" class="w3-yellow"><i class="fa fa-home w3-margin-right"></i>Top</a></li>
-            <li class="w3-hide-small"><a href="#skill" class="w3-hover-white">技術</a></li>
-            <li class="w3-hide-small"><a href="#experience" class="w3-hover-white">經驗</a></li>
-            <li class="w3-hide-small"><a href="#habit" class="w3-hover-white">興趣</a></li>
+            <li><a id="gotop" class="w3-yellow"><i class="fa fa-home w3-margin-right"></i>Top</a></li>
+            <li class="w3-hide-small"><a id="goskill" class="w3-hover-white">技術</a></li>
+            <li class="w3-hide-small"><a id="goexperience" class="w3-hover-white">經驗</a></li>
+            <li class="w3-hide-small"><a id="gohabit" class="w3-hover-white">興趣</a></li>
         </ul>
     </div>
     <!-- Navbar on small screens -->
     <div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:43px;">
         <ul class="w3-navbar w3-left-align w3-large w3-theme">
-            <li><a href="#skill">技術</a></li>
-            <li><a href="#experience">經驗</a></li>
-            <li><a href="#habit">興趣</a></li>
+            <li><a id="navskill">技術</a></li>
+            <li><a id="navexperience">經驗</a></li>
+            <li><a id="navhabit">興趣</a></li>
         </ul>
     </div>
     <!-- 自我介紹 -->
@@ -43,8 +45,8 @@
                 <h3>謝尹瑄 <span style="font-size:16px;">Hsieh, Yin Hsuan </span></h3>
                 <p>♏ 天蠍座</p>
                 <p>1991.11.19</p>
-                <p>台北市 南港區</p>
-                <p>105學年度 國立台灣科技大學 資訊管理 畢業</p>
+                <p>國立台灣科技大學 資訊管理</p>
+                <p>105學年 行動計算與資料探勘實驗室 畢業</p>
             </div>
         </div>
     </div>
@@ -59,13 +61,11 @@
                 <p><b>個性開朗：</b>社團活動舉辦畢業歡送會時，擔任主持人。</p>
                 <p><b>學習能力佳：</b>接案之前，沒有設計經驗，也完全不會DHTML，案子到手就立刻抱著書、做中學，並順利結案。
                     <br>向政府機關接案的經驗，接受各層級長官們的洗禮，這麼一路過關斬將，讓我了解溝通的重要性，沒有良好的需求確認，會造成在功能與畫面設計階段，走許多冤枉路。期許自己不重蹈覆轍。</p>
-                <p><b>規劃：</b><br>預計今年10月底考普通重型機車駕照<br>報名明年的日文檢定測驗</p>
+                <p><b>規劃：</b>
+                    <br>預計報名明年的日文檢定測驗</p>
                 <p><b>最近在看的一本書：</b>
                     <br>Responsive Web Design
                     <br>自動調適型網頁程式設計
-                </p>
-                <p><b>最近在看的語言書：</b>
-                    <br>大家的日本語 初級II
                 </p>
             </div>
         </div>
@@ -351,7 +351,7 @@
                             </tr>
                             <tr>
                                 <td>編輯器</td>
-                                <td>Sublime text 3, Eclipse</td>
+                                <td>Sublime text, Eclipse</td>
                             </tr>
                             <tr>
                                 <td>版本控制</td>
@@ -363,7 +363,7 @@
                             </tr>
                             <tr>
                                 <td>繪圖軟體</td>
-                                <td>Photoshop, illustrator</td>
+                                <td>PS, AI</td>
                             </tr>
                         </table>
                     </div>
